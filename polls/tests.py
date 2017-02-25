@@ -1,3 +1,5 @@
+# test comment
+
 import datetime
 
 from django.utils import timezone
@@ -38,7 +40,7 @@ class QuestionIndexDetailTests(TestCase):
         response = self.client.get(url)
         self.assertContains(response, past_question.question_text)
 
-        
+
 class QuestionViewTests(TestCase):
     def test_index_view_with_no_questions(self):
         """
